@@ -168,7 +168,11 @@ retornar a string:
 - "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
 */
 pessoa.apresentacao = function (){
-    return 'ola, eu sou o ' + pessoa.nomeCompleto + 'tenho' + pessoa.idade + " ," + pessoa.altura + ", meu peso é: " + pessoa.peso + " e ja andei" + pessoa.caminhouQuantosMetros
+
+    var sexo = 'm';
+
+    var fraseSexo  = (sexo == 'm' ? "eu sou o" : "eu sou a" );
+    return fraseSexo + pessoa.nomeCompleto + 'tenho' + pessoa.idade + " ," + pessoa.altura + ", meu peso é: " + pessoa.peso + " e ja andei" + pessoa.caminhouQuantosMetros
 }
 
 /*Só que, antes de retornar a string, você vai fazer algumas validações:
